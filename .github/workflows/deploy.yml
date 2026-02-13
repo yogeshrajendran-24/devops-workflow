@@ -23,7 +23,7 @@ jobs:
       run: docker build -t ${{ secrets.DOCKER_USERNAME }}/devops-workflow:latest .
 
     - name: Push Docker Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-workflow:latest .
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/devops-workflow:latest 
 
     - name: SSH to EC2 & Deploy
       uses: appleboy/ssh-action@master
