@@ -34,4 +34,4 @@ jobs:
         username: ubuntu
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          kubectl rollout restart deployment devops-workflow
+          sudo kubectl rollout restart deployment devops-workflow
