@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.pipeline {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.stage {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333;
+    width: 120px;
+    background: white;
+}
+
+.active {
+    background: orange;
+    color: white;
+}
+
+.success {
+    background: green;
+    color: white;
+}
+
+.progress-container {
+    width: 80%;
+    height: 20px;
+    background: #ddd;
+    margin: 20px auto;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: green;
+    transition: width 0.5s;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#logs {
+    width: 80%;
+    margin: auto;
+    background: black;
+    color: lime;
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    text-align: left;
+}
